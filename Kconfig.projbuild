@@ -1,0 +1,13 @@
+menu "I2S Output Pin configuration"
+    config I2S_OUTPUT_BCLK_GPIO
+    int "I2S OUTPUT BCLK GPIO"
+    default 19
+
+    config I2S_OUTPUT_WS_GPIO
+    int "I2S OUTPUT WS GPIO"
+    default 18
+
+    config I2S_OUTPUT_DOUT_GPIO
+    int "I2S OUTPUT DOUT GPIO"
+    default 5
+endmenu

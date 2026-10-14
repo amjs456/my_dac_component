@@ -1,0 +1,25 @@
+dependencies:
+  idf:
+    source:
+      type: idf
+    version: 6.0.1
+  my_adc_component:
+    component_hash: cc2e6cea95f33a0f7b6cd000fc168aba10c83ed3b3225288eafa4f1dff7c9415
+    dependencies: []
+    source:
+      git: https://github.com/amjs456/my_adc_component.git
+      path: .
+      type: git
+    version: 2a4a5af802265471f371d82a194618a9bc538071
+  my_dac_component:
+    dependencies: []
+    source:
+      path: ../..
+      type: local
+    version: '*'
+direct_dependencies:
+- my_adc_component
+- my_dac_component
+manifest_hash: b843742e89002ce412af741a42e1602045960a6325432ce1ffdc160f0aa5733e
+target: esp32
+version: 3.0.0
