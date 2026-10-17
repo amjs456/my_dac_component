@@ -4,13 +4,13 @@ dependencies:
       type: idf
     version: 6.0.1
   my_adc_component:
-    component_hash: f0455ada1e2c8ccbee2c96e340c3b7f95a7e506604063a216e8e63059a6cac92
+    component_hash: a9a5d2ad2b0b32eb53b165c16620837e4021440ec0571662823747df6191dd47
     dependencies: []
     source:
       git: https://github.com/amjs456/my_adc_component.git
       path: .
       type: git
-    version: 8f3745ce7efec105eedcc350614028f89c793ac6
+    version: 3189f1e4f7e819a8c02757ed49cc360917f25dce
   my_dac_component:
     dependencies: []
     source:

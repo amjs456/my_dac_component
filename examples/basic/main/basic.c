@@ -36,16 +36,15 @@ void mediation_task(void *args){
             int32_t lin = samples[i] >> 8;
             int32_t rin = samples[i + 1] >> 8;
 
-            if(head<DATA_BUF_SIZE){
-                data[head] = rin << 8;
-                head++;
-            } else {
+            if(head>=DATA_BUF_SIZE){
                 UBaseType_t res = xRingbufferSend(dac_buf_handle, data, sizeof(data), portMAX_DELAY);
                 if(res != pdTRUE){
                     printf("Failed to send data\n");
                 }
                 head = 0;
             }
+            data[head] = lin << 8;
+            head++;
         }
         vRingbufferReturnItem(adc_buf_handle, samples);
     }
