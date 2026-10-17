@@ -26,7 +26,7 @@ void mediation_task(void *args){
 
     RingbufHandle_t dac_buf_handle = buf_handles->dac_buf_handle;
 
-    uint32_t data[DATA_BUF_SIZE];
+    int32_t data[DATA_BUF_SIZE];
     size_t head = 0;
 
     while(true){

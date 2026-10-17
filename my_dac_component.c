@@ -61,7 +61,7 @@ esp_err_t my_dac_init(i2s_chan_handle_t *tx_channel){
 }
 
 static esp_err_t i2s_write(i2s_chan_handle_t tx_channel, const void *data, size_t data_size){
-    const uint8_t *next = (const uint8_t *)data;
+    const int8_t *next = (const int8_t *)data;
     size_t remaining = data_size;
 
     while(remaining > 0){
