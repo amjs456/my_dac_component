@@ -4,13 +4,13 @@ dependencies:
       type: idf
     version: 6.0.1
   my_adc_component:
-    component_hash: cc2e6cea95f33a0f7b6cd000fc168aba10c83ed3b3225288eafa4f1dff7c9415
+    component_hash: f0455ada1e2c8ccbee2c96e340c3b7f95a7e506604063a216e8e63059a6cac92
     dependencies: []
     source:
       git: https://github.com/amjs456/my_adc_component.git
       path: .
       type: git
-    version: 2a4a5af802265471f371d82a194618a9bc538071
+    version: 8f3745ce7efec105eedcc350614028f89c793ac6
   my_dac_component:
     dependencies: []
     source:
@@ -21,5 +21,5 @@ direct_dependencies:
 - my_adc_component
 - my_dac_component
 manifest_hash: b843742e89002ce412af741a42e1602045960a6325432ce1ffdc160f0aa5733e
-target: esp32
+target: esp32s3
 version: 3.0.0
